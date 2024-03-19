@@ -1,0 +1,33 @@
+Difference Between   HTTP 1.1 vs HTTP 2  
+
+HTTP 1.1 
+
+*  It was introduced in 1997 
+
+*  It has features like CORS , kepp alive 
+
+*  This will not allow multiplexing , which means , it allows only one request and response 
+   over a single TCP connection .....
+   for each request each TCP connection was created ....
+
+*  header information is repeated with every request , like user agent , cookies , cache 
+   it makes the request size large , and drawback back for fast response 
+
+*  KEEP ALIVE  option enables Re-using of the same TCP connection for multiple HTTP request 
+   but this will not the great relief , because we use new TCP connection for every request 
+
+
+
+HTTP 2.0 or  HTTP 2
+
+*  HTTP 2 was introduced in 2015 (  after http 1.1 version development it takes "18 years" to develop another update version )
+
+*  This will do multiplexing , which means " one secured TCP connection is setup , In which http request are transferred in form of streams ....
+   but complusory of TLS setup , because  HTTPS  is mandatory requirment 
+
+  HPACK , header data (user agent , coolies , cache ) are seperated from request data and it can be ZIPPED 
+  HPACK   also enable re-use of header data , which is repeated in every request 
+  HPACK   it can reduce request size , perfomance speed also much faster
+
+* PUSH   push frame enable server to send ( mandatory or addition related resource ) in advance , along with an http responce 
+  push frame should be use with care ,as this can leads to increase the size of server http reponse                                                          

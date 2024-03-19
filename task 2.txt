@@ -1,0 +1,43 @@
+Objects :
+
+* objects is one of the datatype in java script .....
+  it can store the various type of data in key and value pair collections 
+  object can be created using object constructor  " object or  {} "
+
+  internal representation of object :
+
+  *In  below coding  note this : 
+  * keys are denoted in assigning operator left side , for key , it was unique we cannot change and no need of cotations ("")............
+  * values are denoted in assinging operator right side , for value , it can be changeable , not unique , and Datatype syntax must follow , and End with comma for adding another key ....
+  * both notation is there to follow : Dot notation . and square bracket notation [] , to print the required key value 
+
+
+
+for example  adhaar details :
+
+
+  let person = {
+            name = "akash",
+            age  = 23,
+            gender = "male",
+            address = "chennai, tamilnadu, india",
+            siblings = {
+                brother = "abishek shankar",
+                sister  = "trisa shankar"
+            }
+  }
+
+
+// dot notation 
+syntax ---- console.log(odjectname.key name);
+console.log(person.age);
+
+
+// square bracket notation ....key name inside square bracket must in single cotation
+syntax ---- console.log(objectname['key name'])
+console.log(person['age']);
+
+//to acess key object
+syntax ---- console.log(objectname.keyname.keyname)
+console.log(person.siblings.brother)
+
